@@ -129,6 +129,12 @@
 .saanvik-logo {
   width: 250px;
 }
+
+@media (max-width:992px){
+  .saanvik-logo {
+    width: 150px;
+  }
+}
 .sticky-top,
 .sticky-top .container {
   transition: 0.5s !important;
@@ -1174,3 +1180,10 @@ button.carousel-btn {
   button.carousel-btnn:active {
     transform: scale(0.9);
   }
+
+  .whatsapp {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 999;
+}
