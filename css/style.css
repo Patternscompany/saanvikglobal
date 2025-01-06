@@ -127,6 +127,9 @@
 /*** Topbar End ***/
 
 /*** Navbar ***/
+.saanvik-logo{
+    width: 250px;
+}
 .sticky-top,
 .sticky-top .container {
     transition: 0.5s !important;
@@ -134,7 +137,7 @@
 
 .navbar .navbar-nav .nav-item.nav-link,
 .navbar .navbar-nav .nav-link {
-    color: var(--bs-dark) !important;
+    color: var(--bs-white) !important;
 }
 
 .navbar .navbar-nav .nav-item {
