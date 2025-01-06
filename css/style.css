@@ -1183,16 +1183,17 @@ button.carousel-btn {
 
   .whatsapp {
     position: fixed;
-    left: 30px;
-    bottom: 25px;
+    right: 30px;
+    bottom: 100px;
     z-index: 999;
     background-color: green;
-    width: 45px;
-    height: 45px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 .whatsapp i {
   font-size: 2rem;
