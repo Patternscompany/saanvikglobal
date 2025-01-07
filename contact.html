@@ -165,8 +165,8 @@
                             <div class="bg-primary btn-lg-square rounded-circle p-4"><i
                                     class="fa fa-home text-white"></i></div>
                             <div class="ms-4">
-                                <h4>Addresses</h4>
-                                <a href="" class="mb-0">123 ranking Street, New York, USA</a>
+                                <h4>Address</h4>
+                                <a href="" class="mb-0">177 Redbridge Lane East Ilford IG45DB</a>
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-4">
@@ -209,13 +209,13 @@
                                     <label for="phone">Your Phone</label>
                                 </div>
                             </div>
-                            <div class="col-lg-12 col-xl-6">
+                            <!-- <div class="col-lg-12 col-xl-6">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="project" placeholder="Project">
                                     <label for="project">Your Project</label>
                                 </div>
-                            </div>
-                            <div class="col-12">
+                            </div> -->
+                            <div class="col-lg-12 col-xl-6">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="subject" placeholder="Subject">
                                     <label for="subject">Subject</label>
@@ -236,21 +236,11 @@
                 </div>
                 <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded h-100">
-                        <iframe class="rounded-top w-100" style="height: 500px; margin-bottom: -6px;"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd"
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <div class="d-flex align-items-center justify-content-center bg-primary rounded-bottom p-4">
-                            <div class="d-flex">
-                                <a class="btn btn-dark btn-lg-square rounded-circle me-2" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-dark btn-lg-square rounded-circle mx-2" href=""><i
-                                        class="fab fa-x-twitter"></i></a>
-                                <a class="btn btn-dark btn-lg-square rounded-circle mx-2" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                                <a class="btn btn-dark btn-lg-square rounded-circle mx-2" href=""><i
-                                        class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2479.5154188774272!2d0.045618875860118806!3d51.577116405608855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a6e01407dbcd%3A0xa666ad704e6801a5!2s177%20Redbridge%20Ln%20E%2C%20Ilford%20IG4%205DB%2C%20UK!5e0!3m2!1sen!2sin!4v1736251432884!5m2!1sen!2sin"
+                            width="600" height="450" class="w-100" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            style="height: 500px; margin-bottom: -6px;"></iframe>
                     </div>
                 </div>
             </div>
@@ -358,6 +348,33 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        // Event listener for form submission
+        document.querySelector('form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get the values of the form fields
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            //const project = document.getElementById('project').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Construct the WhatsApp message
+            const whatsAppMessage = `Hello, I would like to inquire about the following:\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;
+
+            // Encode the message to be used in the WhatsApp URL
+            const encodedMessage = encodeURIComponent(whatsAppMessage);
+
+            // Construct the WhatsApp URL (using WhatsApp API link)
+            const whatsAppURL = `https://wa.me/+919513184144?text=${encodedMessage}`;
+
+            // Redirect to WhatsApp with the pre-filled message
+            window.open(whatsAppURL, '_blank');
+        });
+    </script>
+
 </body>
 
 </html>
