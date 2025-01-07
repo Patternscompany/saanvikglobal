@@ -1202,3 +1202,10 @@ button.carousel-btn {
   background-color: var(--primary);
   /* border-radius: 50%; */
 }
+
+.about-img-container{
+  background-color: var(--bs-primary);
+  border-radius: 50%;
+  padding: 10px;
+  width: 100px;
+}
