@@ -989,7 +989,7 @@
 }
 
 .footer .footer-item a:hover {
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: var(--bs-primary);
 }
 
@@ -1202,10 +1202,35 @@ button.carousel-btn {
   background-color: var(--primary);
   /* border-radius: 50%; */
 }
-
+.process-container h2{
+  text-decoration: underline;
+}
+.process-container div strong{
+  color: var(--bs-dark);
+  font-size: 1.5rem;
+}
 .about-img-container{
   background-color: var(--bs-primary);
   border-radius: 50%;
   padding: 10px;
   width: 100px;
+}
+.process-step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.process-step img {
+  width: 100%;
+  margin-right: 15px;
+}
+.process-step div {
+  font-size: 1rem;
+}
+.process-step strong {
+  font-size: 1.1rem;
+}
+.visa{
+  height: 400px;
+  object-fit: cover;
 }
