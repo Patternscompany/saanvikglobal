@@ -113,7 +113,24 @@
                             </svg>
                         </button>
                     </a>
-                    <button id="languageSwitch" class="btn btn-secondary ms-2">Switch to Dutch</button>
+                    <div class="nav-item dropdown me-0 lang-container">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageSwitch" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img id="currentLangIcon" src="path-to-english-icon.png" alt="English Icon"> English
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languageSwitch">
+                            <li>
+                                <a class="dropdown-item" href="#" onclick="switchLanguage('en')">
+                                    <img src="img/eng.png" alt="English Icon" class="lang-icon"> En
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" onclick="switchLanguage('nl')">
+                                    <img src="img/dut.png" alt="Dutch Icon" class="lang-icon"> Du
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -261,22 +278,26 @@
                                     data-lang-nl="Uitgebreide vacaturematching">Comprehensive Job Matching</span>
                             </p>
                             <p class="text-dark mb-0"><i class="fas fa-check-circle text-primary me-1"></i>
-                                <span data-lang-en="Expert career Guidance" data-lang-nl="Deskundige loopbaanbegeleiding">Expert Career Guidance</span>
+                                <span data-lang-en="Expert career Guidance"
+                                    data-lang-nl="Deskundige loopbaanbegeleiding">Expert Career Guidance</span>
                             </p>
                         </div>
                         <div class="col-lg-6 col-xl-6">
                             <p class="text-dark"><i class="fas fa-check-circle text-primary me-1"></i>
-                                <span data-lang-en="Extensive Employer Network" data-lang-nl="Uitgebreid werkgeversnetwerk">Extensive Employer Network</span>
+                                <span data-lang-en="Extensive Employer Network"
+                                    data-lang-nl="Uitgebreid werkgeversnetwerk">Extensive Employer Network</span>
                             </p>
                             <p class="text-dark mb-0"><i class="fas fa-check-circle text-primary me-1"></i>
-                                <span data-lang-en="End-to-End Recruitment Solutions" data-lang-nl="End-to-end rekruteringsoplossingen">End-to-End Recruitment Solutions</span>
+                                <span data-lang-en="End-to-End Recruitment Solutions"
+                                    data-lang-nl="End-to-end rekruteringsoplossingen">End-to-End Recruitment
+                                    Solutions</span>
                             </p>
                         </div>
                     </div>
                     <div class="row g-4 justify-content-between mb-5">
                         <div class="col-xl-5">
                             <a href="about.html" class="btn btn-primary rounded-pill py-3 px-5">
-                            <span data-lang-en="Read More" data-lang-nl="Lees Meer">Read More</span>
+                                <span data-lang-en="Read More" data-lang-nl="Lees Meer">Read More</span>
                             </a>
                         </div>
                     </div>
@@ -329,8 +350,11 @@
         <div class="container">
             <div class="row">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                    <h4 class="text-primary fs-1">JOB OPPORTUNITIES</h4>
-                    <p class="fs-6">
+                    <h4 class="text-primary fs-1" data-lang-en="Job Opportunities" data-lang-nl="Kansen Op Werk">JOB
+                        OPPORTUNITIES</h4>
+                    <p class="fs-6"
+                        data-lang-en="Germany is a hub of opportunities for skilled professionals across engineering, IT, healthcare, and manufacturing. With a robust economy and global companies, it offers competitive salaries, excellent work-life balance, and demand for international talent. Let us help you explore and secure your dream job in Germany!"
+                        data-lang-nl="Duitsland is een knooppunt van kansen voor bekwame professionals op het gebied van techniek, IT, gezondheidszorg en productie. Met een robuuste economie en mondiale bedrijven biedt het land concurrerende salarissen, een uitstekende balans tussen werk en privéleven en de vraag naar internationaal talent. Laat ons u helpen uw droombaan in Duitsland te verkennen en veilig te stellen!">
                         Germany is a hub of opportunities for skilled professionals across engineering, IT, healthcare,
                         and manufacturing. With a robust economy and global companies, it offers competitive salaries,
                         excellent work-life balance, and demand for international talent. Let us help you explore and
@@ -347,13 +371,17 @@
                             <div class="service-content text-center p-4">
                                 <div class="service-content-inner">
                                     <a href="#" class="h4 d-inline-flex align-items-center"><i
-                                            class="fas fa-donate fa-2x me-2"></i> Job Seekers</a>
-                                    <p class="mb-4">
+                                            class="fas fa-donate fa-2x me-2"></i> <span data-lang-en="Job Seekers"
+                                            data-lang-nl="Werkzoekenden">Job Seekers</span></a>
+                                    <p class="mb-4"
+                                        data-lang-en="We provide corporate training to help job seekers improve their skills and compete effectively in the job market. Our goal is to prepare them for success in their careers."
+                                        data-lang-nl="Wij bieden bedrijfstrainingen om werkzoekenden te helpen hun vaardigheden te verbeteren en effectief te concurreren op de arbeidsmarkt. Ons doel is om hen voor te bereiden op succes in hun carrière.">
                                         We provide corporate training to help job seekers improve their skills and
                                         compete effectively in the job market. Our goal is to prepare them for success
                                         in their careers.
                                     </p>
-                                    <a class="btn btn-light rounded-pill py-2 px-4" href="service.html">Read More</a>
+                                    <a class="btn btn-light rounded-pill py-2 px-4" href="service.html"
+                                        data-lang-en="Read More" data-lang-nl="Lees Meer">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -512,14 +540,16 @@
     <div class="container-fluid blog pb-5">
         <div class="container pb-5">
             <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                <h4 class="text-primary">Our Blogs</h4>
-                <h3 class="display-8">Latest Articles & News from the Blogs</h3>
+                <h4 class="text-primary" data-lang-en="Our Blogs" data-lang-nl="Onze Blogs">Our Blogs</h4>
+                <h3 class="display-8" data-lang-en="Latest Articles & News from the Blogs"
+                    data-lang-nl="Laatste Artikelen En nieuws Van De Blogs">Latest Articles & News from the Blogs</h3>
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
                         <div class="mb-4">
-                            <h4 class="text-primary mb-2">Consultancy</h4>
+                            <h4 class="text-primary mb-2" data-lang-en="Consultancy" data-lang-nl="Consulent">
+                                Consultancy</h4>
                             <div class="d-flex justify-content-between">
                                 <!-- <p class="mb-0"><span class="text-dark fw-bold">On</span> Mar 14, 2024</p> -->
                                 <!-- <p class="mb-0"><span class="text-dark fw-bold">By</span> Mark D. Brock</p> -->
@@ -534,15 +564,17 @@
                             </div>
                         </div>
                         <div class="my-4">
-                            <a href="#" class="h4">Industry Insights</a>
+                            <a href="#" class="h4" data-lang-en="Industry Insights"
+                                data-lang-nl="Inzichten in de sector">Industry Insights</a>
                         </div>
-                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Explore More</a>
+                        <a class="btn btn-primary rounded-pill py-2 px-4" data-lang-en="Explore More"
+                            data-lang-nl="ontdekken meer" href="#">Explore More</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
                         <div class="mb-4">
-                            <h4 class="text-primary mb-2">Business</h4>
+                            <h4 class="text-primary mb-2" data-lang-en="Business" data-lang-nl="Bedrijf">Business</h4>
                             <div class="d-flex justify-content-between">
                                 <!-- <p class="mb-0"><span class="text-dark fw-bold">On</span> Mar 14, 2024</p> -->
                                 <!-- <p class="mb-0"></p> -->
@@ -557,15 +589,18 @@
                             </div>
                         </div>
                         <div class="my-4">
-                            <a href="#" class="h4">Career Guidance and Development</a>
+                            <a href="#" class="h4 text-capitalize" data-lang-en="Career Guidance and Development"
+                                data-lang-nl="Loopbaanbegeleiding En ontwikkeling">Career Guidance and Development</a>
                         </div>
-                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Explore More</a>
+                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#" data-lang-en="Explore More"
+                            data-lang-nl="ontdekken meer">Explore More</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
                         <div class="mb-4">
-                            <h4 class="text-primary mb-2">Consulting</h4>
+                            <h4 class="text-primary mb-2" data-lang-en="Consultancy" data-lang-nl="Consulent">Consulting
+                            </h4>
                             <div class="d-flex justify-content-between">
                                 <!-- <p class="mb-0"><span class="text-dark fw-bold">On</span> Mar 14, 2024</p> -->
                                 <!-- <p class="mb-0"><span class="text-dark fw-bold">By</span> Mark D. Brock</p> -->
@@ -580,9 +615,11 @@
                             </div>
                         </div>
                         <div class="my-4">
-                            <a href="#" class="h4">Resume and Cover Letter Tips</a>
+                            <a href="#" class="h4 text-capitalize" data-lang-en="Resume and Cover Letter Tips"
+                                data-lang-nl="Tips voor CV's en sollicitatiebrieven">Resume and Cover Letter Tips</a>
                         </div>
-                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Explore More</a>
+                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#" data-lang-en="Explore More"
+                            data-lang-nl="ontdekken meer">Explore More</a>
                     </div>
                 </div>
             </div>
@@ -711,8 +748,10 @@
             <div class="row g-4 align-items-center">
                 <div class="col-xl-4 wow fadeInLeft" data-wow-delay="0.1s">
                     <div class="h-100 rounded">
-                        <h4 class="text-primary">Our Feedbacks </h4>
-                        <h3 class="display-6 mb-4">Clients are Talking</h3>
+                        <h4 class="text-primary text-capitalize" data-lang-en="Our Feedbacks"
+                            data-lang-nl="Onze Feedbacks">Our Feedbacks </h4>
+                        <h3 class="display-6 mb-4 text-capitalize" data-lang-en="Clients are Talking"
+                            data-lang-nl="Klanten praten">Clients are Talking</h3>
                         <!-- <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum atque soluta unde
                             itaque. Consequatur quam odit blanditiis harum veritatis porro.</p> -->
                         <!-- <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Read All Reviews <i
@@ -724,7 +763,9 @@
                         <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="d-flex">
                                 <div><i class="fas fa-quote-left fa-3x text-dark me-3"></i></div>
-                                <p class="mt-4">
+                                <p class="mt-4" data-lang-en="Thanks to Saanvik Global, I landed my dream job in Germany. Their guidance and
+                                    support made the process seamless, and I couldn't be happier with my new role!"
+                                    data-lang-nl="Dankzij Saanvik Global kreeg ik mijn droombaan in Duitsland. Hun begeleiding en ondersteuning zorgden ervoor dat het proces naadloos verliep, en ik kon niet gelukkiger zijn met mijn nieuwe rol!">
                                     Thanks to Saanvik Global, I landed my dream job in Germany. Their guidance and
                                     support made the process seamless, and I couldn't be happier with my new role!
                                 </p>
@@ -744,7 +785,10 @@
                         <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="d-flex">
                                 <div><i class="fas fa-quote-left fa-3x text-dark me-3"></i></div>
-                                <p class="mt-4">
+                                <p class="mt-4" data-lang-en="The team at Saanvik Global was incredibly professional and supportive throughout my
+                                    job search. They understood my career goals and matched me with the perfect
+                                    opportunity in Germany"
+                                    data-lang-nl="Het team van Saanvik Global was ongelooflijk professioneel en ondersteunend tijdens mijn zoektocht naar een baan. Ze begrepen mijn carrièredoelen en koppelden mij aan de perfecte kans in Duitsland">
                                     The team at Saanvik Global was incredibly professional and supportive throughout my
                                     job search. They understood my career goals and matched me with the perfect
                                     opportunity in Germany
@@ -765,7 +809,10 @@
                         <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.7s">
                             <div class="d-flex">
                                 <div><i class="fas fa-quote-left fa-3x text-dark me-3"></i></div>
-                                <p class="mt-4">
+                                <p class="mt-4" data-lang-en="Choosing Saanvik Global was a game-changer for my career. Their expertise in placing
+                                    Indian professionals in Germany has set me on a path of long-term success and
+                                    growth."
+                                    data-lang-nl="De keuze voor Saanvik Global was een gamechanger voor mijn carrière. Hun expertise in het plaatsen van Indiase professionals in Duitsland heeft mij op een pad van succes en groei op de lange termijn gezet.">
                                     Choosing Saanvik Global was a game-changer for my career. Their expertise in placing
                                     Indian professionals in Germany has set me on a path of long-term success and
                                     growth.
@@ -797,15 +844,19 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
                     <div class="pb-5">
-                        <h4 class="text-primary">FAQs</h4>
-                        <h3 class="display-8">Get the Answers to Common Questions</h3>
+                        <h4 class="text-primary" data-lang-en="FAQs" data-lang-nl="Veelgestelde Vragen">FAQs</h4>
+                        <h3 class="display-8 text-capitalize" data-lang-en="Get the Answers to Common Questions"
+                            data-lang-nl="Krijg de antwoorden op veelgestelde vragen">Get the Answers to Common
+                            Questions</h3>
                     </div>
                     <div class="accordion bg-light rounded p-4" id="accordionExample">
                         <div class="accordion-item border-0 mb-4">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button text-dark fs-5 fw-bold rounded-top" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                    aria-controls="collapseTOne">
+                                    aria-controls="collapseTOne"
+                                    data-lang-en="How long does it typically take to secure a job in Germany?"
+                                    data-lang-nl="Hoe lang duurt het doorgaans om een ​​baan te vinden in Duitsland?">
                                     How long does it typically take to secure a job in Germany?
                                 </button>
                             </h2>
@@ -813,7 +864,8 @@
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body my-2">
                                     <!-- <h5>Dolor sit amet consectetur adipisicing elit.</h5> -->
-                                    <p>
+                                    <p data-lang-en="The timeline can vary, but it typically takes 3 to 6 months from the initial consultation to securing a job offer, depending on the role and market conditions."
+                                        data-lang-nl="De tijdlijn kan variëren, maar het duurt doorgaans 3 tot 6 maanden vanaf het eerste consult tot het binnenhalen van een baanaanbieding, afhankelijk van de functie en de marktomstandigheden.">
                                         The timeline can vary, but it typically takes 3 to 6 months from the initial
                                         consultation to securing a job offer, depending on the role and market
                                         conditions.
@@ -825,7 +877,9 @@
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top"
                                     type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    aria-expanded="false" aria-controls="collapseTwo"
+                                    data-lang-en="What services does your consultancy offer for job seekers in Germany?"
+                                    data-lang-nl="Welke diensten biedt uw adviesbureau aan werkzoekenden in Duitsland?">
                                     What services does your consultancy offer for job seekers in Germany?
                                 </button>
                             </h2>
@@ -833,7 +887,9 @@
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body my-2">
                                     <!-- <h5>Dolor sit amet consectetur adipisicing elit.</h5> -->
-                                    <p>
+                                    <p data-lang-en="We provide end-to-end services, including job search assistance, resume
+                                        building, interview preparation, visa guidance, and relocation support."
+                                        data-lang-nl="Wij bieden end-to-end diensten, waaronder hulp bij het zoeken naar werk, het opstellen van cv's, het voorbereiden van sollicitatiegesprekken, visumbegeleiding en ondersteuning bij verhuizing.">
                                         We provide end-to-end services, including job search assistance, resume
                                         building, interview preparation, visa guidance, and relocation support.
                                     </p>
@@ -844,7 +900,9 @@
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top"
                                     type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                    aria-expanded="false" aria-controls="collapseThree">
+                                    aria-expanded="false" aria-controls="collapseThree"
+                                    data-lang-en="Do you provide assistance for family relocation?"
+                                    data-lang-nl="Biedt u hulp bij gezinsverhuizing?">
                                     Do you provide assistance for family relocation?
                                 </button>
                             </h2>
@@ -852,7 +910,8 @@
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body my-2">
                                     <!-- <h5>Dolor sit amet consectetur adipisicing elit.</h5> -->
-                                    <p>
+                                    <p data-lang-en="Yes, we offer support for family relocation, including dependent visas and guidance on finding schools and housing in Germany."
+                                        data-lang-nl="Ja, we bieden ondersteuning bij gezinsverhuizing, inclusief afhankelijke visa en begeleiding bij het vinden van scholen en huisvesting in Duitsland.">
                                         Yes, we offer support for family relocation, including dependent visas and
                                         guidance on finding schools and housing in Germany.
                                     </p>
@@ -863,7 +922,9 @@
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top"
                                     type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                    aria-expanded="false" aria-controls="collapseFour">
+                                    aria-expanded="false" aria-controls="collapseFour"
+                                    data-lang-en="Do you offer language training or cultural orientation for Germany?"
+                                    data-lang-nl="Biedt u taaltrainingen of culturele oriëntatie aan voor Duitsland?">
                                     Do you offer language training or cultural orientation for Germany?
                                 </button>
                             </h2>
@@ -871,7 +932,9 @@
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body my-2">
                                     <!-- <h5>Dolor sit amet consectetur adipisicing elit.</h5> -->
-                                    <p>
+                                    <p data-lang-en="Yes, we provide resources and recommendations for German language courses and
+                                        cultural orientation to help you integrate better into your new environment."
+                                        data-lang-nl="Ja, we bieden hulpmiddelen en aanbevelingen voor Duitse taalcursussen en culturele oriëntatie om u te helpen beter te integreren in uw nieuwe omgeving.">
                                         Yes, we provide resources and recommendations for German language courses and
                                         cultural orientation to help you integrate better into your new environment.
                                     </p>
@@ -900,7 +963,7 @@
                     <div class="footer-item d-flex flex-column">
                         <div class="footer-item">
                             <img src="img/logo.png" alt="Saanvik Global" class="saanvik-logo mb-2">
-                            <h4 class="text-white mb-4">Follow Us</h4>
+                            <h4 class="text-white mb-4" data-lang-en="Follow Us" data-lang-nl="Volg Ons">Follow Us</h4>
                             <div class="d-flex align-items-center">
                                 <a class="btn btn-light btn-md-square me-2" href=""><i
                                         class="fab fa-facebook-f"></i></a>
@@ -915,18 +978,23 @@
                 <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="footer-item d-flex flex-column">
                         <h4 class="text-white mb-4">Explore</h4>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> Home</a>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                        <a href="index.html"><i class="fas fa-angle-right me-2"></i> <span data-lang-en="Home"
+                                data-lang-nl="Home">Home</span></a>
+                        <a href="service.html"><i class="fas fa-angle-right me-2"></i> <span data-lang-en="Services"
+                                data-lang-nl="Diensten">Services</span></a>
+                        <a href="about.html"><i class="fas fa-angle-right me-2"></i> <span data-lang-en="About"
+                                data-lang-nl="Over Ons">About Us</span></a>
                         <!-- <a href="#"><i class="fas fa-angle-right me-2"></i> Latest Projects</a> -->
                         <!-- <a href="#"><i class="fas fa-angle-right me-2"></i> testimonial</a> -->
                         <!-- <a href="#"><i class="fas fa-angle-right me-2"></i> Our Team</a> -->
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                        <a href="contact.html"><i class="fas fa-angle-right me-2"></i> <span data-lang-en="Contact"
+                                data-lang-nl="Contact">Contact Us</span></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="footer-item d-flex flex-column">
-                        <h4 class="text-white mb-4">Contact Info</h4>
+                        <h4 class="text-white mb-4" data-lang-en="Contact Info" data-lang-nl="Contactgegevens">Contact
+                            Info</h4>
                         <a href=""><i class="fa fa-map-marker-alt me-2"></i>177 Redbridge Lane East Ilford IG45DB</a>
                         <a href="mailto:saanvikglobal@gmail.com"><i class="fas fa-envelope me-2"></i>
                             saanvikglobal@gmail.com</a>
@@ -937,8 +1005,10 @@
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="footer-item-post d-flex flex-column">
-                        <h4 class="text-white mb-3">Newsletter</h4>
-                        <p>Subscribe to our newsletter for the latest updates and exclusive offers!</p>
+                        <h4 class="text-white mb-3" data-lang-en="Newsletter" data-lang-nl="Nieuwsbrief">Newsletter</h4>
+                        <p data-lang-en="Subscribe to our newsletter for the latest updates and exclusive offers!"
+                            data-lang-nl="Schrijf u in op onze nieuwsbrief voor de laatste updates en exclusieve aanbiedingen!">
+                            Subscribe to our newsletter for the latest updates and exclusive offers!</p>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
                             <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text"
                                 placeholder="Your email">
@@ -959,14 +1029,17 @@
             <div class="row g-4 align-items-center">
                 <div class="col-md-6 text-center text-md-start mb-md-0">
                     <span class="text-body"><a href="index.html" class="border-bottom text-primary"><i
-                                class="fas fa-copyright text-light me-2"></i>Saanvik Global</a>, All right
-                        reserved.</span>
+                                class="fas fa-copyright text-light me-2"></i>Saanvik Global</a>,
+                        <span data-lang-en="All rights reserved." data-lang-nl="Alle rechten reserved.">All right
+                            reserved.</span>
+                    </span>
                 </div>
                 <div class="col-md-6 text-center text-md-end text-body">
                     <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
                     <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
                     <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                    Designed By <a class="border-bottom text-primary" href="https://thepatternscompany.com">The Patterns
+                    <span data-lang-en="Designed By" data-lang-nl="Ontworpen Door">Designed By</span>
+                    <a class="border-bottom text-primary" href="https://thepatternscompany.com">The Patterns
                         Company</a>
                 </div>
             </div>
@@ -992,6 +1065,36 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            const savedLang = localStorage.getItem("language") || "en";
+            changeLanguage(savedLang);
+          });
+        
+          function switchLanguage(language) {
+            localStorage.setItem("language", language);
+            changeLanguage(language);
+          }
+        
+          function changeLanguage(language) {
+            const elements = document.querySelectorAll("[data-lang-en]");
+            elements.forEach((el) => {
+              el.textContent =
+                language === "en"
+                  ? el.getAttribute("data-lang-en")
+                  : el.getAttribute("data-lang-nl");
+            });
+        
+            const langButton = document.getElementById("languageSwitch");
+            const langIcon = document.getElementById("currentLangIcon");
+        
+            if (language === "nl") {
+              langButton.innerHTML = `Dutch`;
+            } else {
+              langButton.innerHTML = `English`;
+            }
+          }
+    </script>
 </body>
 
 </html>
