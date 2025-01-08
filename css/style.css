@@ -1249,3 +1249,18 @@ button.carousel-btn {
 .h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1{
   color: var(--bs-dark);
 }
+
+.feature-card-list{
+  color: #f1e3e3;
+}
+.feature-card-list li::marker{
+  color: var(--bs-primary);
+}
+
+.feature-card-list h3{
+  color: var(--bs-primary);
+  font-size: 1.3rem;
+}
+.feature-card-list p{
+  font-size: 1rem;
+}
