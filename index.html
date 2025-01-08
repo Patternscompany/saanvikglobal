@@ -79,31 +79,27 @@
 
     <!-- Navbar & Hero Start -->
     <div class="container-fluid sticky-top px-0">
-        <div class="position-absolute bg-dark" style="left: 0; top: 0; width: 100%; height: 100%;">
-        </div>
-        <div class="container px-0 mw-100">
+        <div class="position-absolute bg-dark" style="left: 0; top: 0; width: 100%; height: 100%;"></div>
+        <div class="container-fluid sticky-top px-0 mw-100">
             <nav class="navbar navbar-expand-lg navbar-dark py-3 px-4">
                 <a href="index.html" class="navbar-brand p-0">
-                    <!-- <h1 class="text-primary m-0">Saanvik Global</h1> -->
-                    <img src="img/logo.png" alt="Logo" class="saanvik-logo">
+                    <img src="img/logo.png" alt="Saanvik Global" class="saanvik-logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-
-
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="index.html" class="nav-item nav-link active" data-lang-en="Home" data-lang-nl="Home">Home</a>
+                        <a href="about.html" class="nav-item nav-link" data-lang-en="About" data-lang-nl="Over">About</a>
+                        <a href="service.html" class="nav-item nav-link" data-lang-en="Services" data-lang-nl="Diensten">Services</a>
+                        <a href="contact.html" class="nav-item nav-link" data-lang-en="Contact" data-lang-nl="Contact">Contact</a>
                     </div>
-                    <button class="btn btn-primary btn-md-square mx-2" data-bs-toggle="modal"
-                        data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
-
-                    <a href="/contact.html" class=" py-4 px-lg-5 d-none d-lg-block">
-                        <button class="button">
+                    <button class="btn btn-primary btn-md-square mx-2" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <a href="/contact.html" class="py-4 px-lg-5 d-none d-lg-block">
+                        <button class="button" data-lang-en="Book Now" data-lang-nl="Boek Nu">
                             Book Now
                             <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
                                 <path fill-rule="evenodd"
@@ -112,10 +108,13 @@
                             </svg>
                         </button>
                     </a>
+                    <button id="languageSwitch" class="btn btn-secondary ms-2">Switch to Dutch</button>
                 </div>
             </nav>
         </div>
     </div>
+    
+    
     <!-- Navbar & Hero End -->
 
     <!-- Modal Search Start -->
@@ -150,8 +149,9 @@
             <div class="carousel-caption">
                 <div class="carousel-caption-inner text-start p-3">
                     <h1 class="display-3 text-capitalize text-white mb-4 fadeInUp animate__animated"
-                        data-animation="fadeInUp" data-delay="1.3s" style="animation-delay: 1.3s;">Empowering Your Job
-                        Search and Recruitment in Germany</h1>
+                        data-animation="fadeInUp" data-delay="1.3s" style="animation-delay: 1.3s;">
+                        Empowering Your Job Search and Recruitment in Germany
+                    </h1>
                     <!-- <p class="mb-5 fs-5 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.5s"
                         style="animation-delay: 1.5s;">Lorem Ipsum is simply dummy text of the printing and typesetting
                         industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,

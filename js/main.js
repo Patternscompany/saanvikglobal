@@ -137,5 +137,36 @@
     });
 
 
+    // On page load, check for the stored language preference in localStorage
+    window.addEventListener('load', function () {
+        const savedLang = localStorage.getItem('language');
+        if (savedLang) {
+            changeLanguage(savedLang);
+        } else {
+            // Default to English if no language is saved
+            changeLanguage('en');
+        }
+    });
+
+    // Language switch functionality
+    document.getElementById('languageSwitch').addEventListener('click', function () {
+        const currentLang = this.textContent.includes('Dutch') ? 'nl' : 'en';
+        localStorage.setItem('language', currentLang); // Save the language choice
+        changeLanguage(currentLang);
+    });
+
+    // Function to change content based on language
+    function changeLanguage(language) {
+        const elements = document.querySelectorAll('[data-lang-en]'); // Elements with translations
+
+        elements.forEach(el => {
+            el.textContent = language === 'nl' ? el.getAttribute('data-lang-nl') : el.getAttribute('data-lang-en');
+        });
+
+        const langButton = document.getElementById('languageSwitch');
+        langButton.textContent = language === 'nl' ? 'Switch to English' : 'Switch to Dutch';
+    }
+
+
 })(jQuery);
 
