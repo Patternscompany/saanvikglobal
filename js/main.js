@@ -164,7 +164,7 @@
         });
 
         const langButton = document.getElementById('languageSwitch');
-        langButton.textContent = language === 'nl' ? 'Switch to English' : 'Switch to Dutch';
+        langButton.textContent = language === 'nl' ? 'English' : 'Dutch';
     }
 
 
